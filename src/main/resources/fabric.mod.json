@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "chestlifter",
+	"version": "1.0.0",
+	"name": "Chestlifter",
+	"description": "Allows carrying small mobs and block entities.",
+	"authors": [
+		"haykam821"
+	],
+	"contact": {
+		"homepage": "https://github.com/haykam821/Chestlifter#readme",
+		"issues": "https://github.com/haykam821/Chestlifter/issues"
+	},
+	"entrypoints": {
+		"main": [
+			"io.github.haykam821.chestlifter.Main"
+		]
+	},
+	"license": "MIT",
+	"icon": "assets/chestlifter/icon.png",
+	"depends": {
+		"fabricloader": ">=0.4.0"
+	}
+}
