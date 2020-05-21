@@ -29,7 +29,6 @@ public class Main implements ModInitializer {
 
 		UseBlockCallback.EVENT.register((player, world, hand, hitResult) -> {
 			if (hand != Hand.MAIN_HAND) return ActionResult.PASS;
-			if (world.isClient()) return ActionResult.PASS;
 
 			// Require empty hands
 			if (!player.getMainHandStack().isEmpty()) return ActionResult.PASS;

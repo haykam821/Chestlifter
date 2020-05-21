@@ -16,6 +16,9 @@
 			"io.github.haykam821.chestlifter.Main"
 		]
 	},
+	"mixins": [
+		"chestlifter.mixin.json"
+	],
 	"license": "MIT",
 	"icon": "assets/chestlifter/icon.png",
 	"depends": {
