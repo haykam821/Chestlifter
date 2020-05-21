@@ -3,6 +3,7 @@ package io.github.haykam821.chestlifter.component;
 import io.github.haykam821.chestlifter.Main;
 import nerdhub.cardinal.components.api.ComponentType;
 import nerdhub.cardinal.components.api.util.sync.EntitySyncedComponent;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.Entity;
@@ -48,6 +49,9 @@ public class LiftedComponent implements EntitySyncedComponent {
 
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		if (blockEntity == null) return ActionResult.PASS;
+
+		Block block = blockState.getBlock();
+		if (Main.UNLIFTABLE.contains(block)) return ActionResult.PASS;
 
 		// Clear existing block
 		world.removeBlockEntity(pos);

@@ -8,7 +8,10 @@ import nerdhub.cardinal.components.api.util.EntityComponents;
 import nerdhub.cardinal.components.api.util.RespawnCopyStrategy;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
+import net.fabricmc.fabric.api.tag.TagRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.tag.Tag;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
@@ -19,6 +22,8 @@ public class Main implements ModInitializer {
 	private static final Identifier LIFTED_ID = new Identifier(MOD_ID, "lifted");
 	public static final ComponentType<LiftedComponent> LIFTED_COMPONENT = ComponentRegistry.INSTANCE.registerIfAbsent(LIFTED_ID, LiftedComponent.class);
 
+	private static final Identifier UNLIFTABLE_ID = new Identifier(MOD_ID, "unliftable");
+	public static final Tag<Block> UNLIFTABLE = TagRegistry.block(UNLIFTABLE_ID);
 
 	@Override
 	public void onInitialize() {

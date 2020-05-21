@@ -1,0 +1,15 @@
+{
+	"values": [
+		"#minecraft:beds",
+		"#minecraft:beehives",
+		"#minecraft:portals",
+		"minecraft:chain_command_block",
+		"minecraft:command_block",
+		"minecraft:end_gateway",
+		"minecraft:jigsaw",
+		"minecraft:moving_piston",
+		"minecraft:repeating_command_block",
+		"minecraft:spawner",
+		"minecraft:structure_block"
+	]
+}
